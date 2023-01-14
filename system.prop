@@ -82,3 +82,6 @@ ro.telephony.block_binder_thread_on_incoming_calls=false
 
 # Disable MTE Async for system server
 arm64.memtag.process.system_server=off
+
+# Updater
+lineage.updater.uri=https://raw.githubusercontent.com/lifehackerhansol-android/lineage_ota/master/api/joan.json
