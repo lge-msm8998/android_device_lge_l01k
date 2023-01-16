@@ -105,6 +105,10 @@ void init_target_properties()
     property_override("ro.product.product.model", model);
     property_override("ro.product.system.model", model);
     property_override("ro.product.vendor.model", model);
+
+    // L-01K uses different NFC driver. Make a custom prop so vendor_init can insmod the right one
+    property_override("vendor.lge.nfc.driver", model == "L-01K" ? "cxd224x" : "pn547");
+
 }
 
 void vendor_load_properties() {

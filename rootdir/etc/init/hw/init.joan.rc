@@ -160,3 +160,10 @@ on property:vendor.lge.vrmode=true
 
 on property:vendor.lge.hdmi.block=*
     write /sys/devices/virtual/graphics/fb2/dp_external_block ${vendor.lge.hdmi.block}
+
+on post-fs-data && property:vendor.lge.nfc.driver=pn547
+    insmod /vendor/lib/modules/pn547_lge_hwadapter.ko
+    insmod /vendor/lib/modules/pn547_lge.ko
+
+on post-fs-data && property:vendor.lge.nfc.driver=cxd224x
+    insmod /vendor/lib/modules/cxd224x-i2c.ko
