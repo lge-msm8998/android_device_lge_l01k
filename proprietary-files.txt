@@ -1,5 +1,5 @@
 # All unpinned blobs below are from joan H930 31a
-# PKQ1.190414.001
+# joan_global_com-user 9 PKQ1.190414.001 193091504cde8 release-keys
 
 # Audio (Firmware)
 vendor/firmware/Tfa9872.cnt
@@ -724,6 +724,9 @@ vendor/lib64/libgcs.so
 # NFC
 vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
 vendor/firmware/libpn548ad_fw_64.so:vendor/lib64/libpn548ad_fw_64.so
+
+# NFC - from joan L-01K - joan_dcm_jp-user 9 PKQ1.190414.001 20072184679ed release-keys
+vendor/firmware/cxd224x_firmware.bin|a9d9e444b7df999d4f3d81e919ef7914489d43c1
 
 # Perf
 vendor/etc/perf/perf-profile0.conf
