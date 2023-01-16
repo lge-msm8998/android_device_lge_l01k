@@ -684,6 +684,11 @@ vendor/firmware/a540_gpmu.fw2
 vendor/firmware/a540_zap.b00
 vendor/firmware/a540_zap.b02
 
+# Graphics (non-H932 firmware)
+vendor/firmware/a540_zap.b01:vendor/firmware/H930/a540_zap.b01
+vendor/firmware/a540_zap.elf:vendor/firmware/H930/a540_zap.elf
+vendor/firmware/a540_zap.mdt:vendor/firmware/H930/a540_zap.mdt
+
 # Graphics (Vulkan)
 vendor/lib/hw/vulkan.msm8998.so
 vendor/lib64/hw/vulkan.msm8998.so

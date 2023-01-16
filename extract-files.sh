@@ -113,26 +113,6 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files_Q910.txt" "${SRC}" ${KANG} --section "${SECTION}"
 
-# Reinitialize the helper for H930 blobs
-echo "Gathering H930 blobs for unified build."
-echo "Please provide the path to H930 blobs."
-echo "or hit enter to attempt fetching from a connected device, adb mode."
-echo "You may run this again if fail or skip."
-echo "Without H930 blobs this build will not be unified."
-echo -n "Path:"
-read SRC
-
-
-if [ -z "${SRC}" ]; then
-    SRC=/home/markus/data/V30/los19_working/system/system
-fi
-
-
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
-
-
-extract "${MY_DIR}/proprietary-files_h930.txt" "${SRC}" ${KANG} --section "${SECTION}"
-
 # Reinitialize the helper for H932 blobs
 echo "Gathering H932 blobs for unified build."
 echo "Please provide the path to H932 blobs."
