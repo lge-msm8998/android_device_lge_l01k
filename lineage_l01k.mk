@@ -7,14 +7,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from joan device
-$(call inherit-product, device/lge/joan/device.mk)
+# Inherit from l01k device
+$(call inherit-product, device/lge/l01k/device.mk)
 
 # Device identifiers
-PRODUCT_DEVICE := joan
-PRODUCT_NAME := lineage_joan
+PRODUCT_DEVICE := L-01K
+PRODUCT_NAME := lineage_l01k
 PRODUCT_BRAND := lge
-PRODUCT_MODEL := joan
+PRODUCT_MODEL := L-01K
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RELEASE_NAME := V30
 

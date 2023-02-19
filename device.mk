@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/lge/joan
+DEVICE_PATH := device/lge/l01k
 
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
@@ -13,4 +13,4 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call inherit-product, device/lge/joan-common/joan.mk)
 
 # Inherit proprietary blobs
-$(call inherit-product-if-exists, vendor/lge/joan/joan-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/l01k/l01k-vendor.mk)
